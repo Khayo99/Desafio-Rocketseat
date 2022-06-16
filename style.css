@@ -28,10 +28,11 @@ textarea:focus, input:focus {
   --font-secundary: 'Roboto', sans-serif;
 }
 
-body {
-  width: 100%;
+body {  
+  width: 100%; 
   height: 100%;
 }
+
 
 .login {
   width: 100vw;
@@ -47,12 +48,13 @@ body {
   top: 0rem;
   left: 0rem;
   padding: 4rem;
+  
 }
 
-.area-login {
+.area-login {  
   background-color: var(--background);
   grid-area: area-login;
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;  
   padding: 5rem 5rem 5rem 5rem;
@@ -161,7 +163,8 @@ body {
 
 
 .input-icons .input:focus {
-  border: 2px solid #ffc632 ;  
+  border: 2px solid #ffc632 ;
+  
 }
 
 .input:focus + .icon-svg svg path {
@@ -282,9 +285,24 @@ body {
 @media screen and (max-width: 475px) {
   .area-login {
     padding: 10px;
+    flex-direction: column;    
   }
+
+  .logo {
+    position: initial;
+    padding: initial;
+    align-self: flex-start;
+    padding: 0 0 1rem 2rem;
+  } 
 
   .form-login {
     background: none;
+  }  
+
+}
+
+@media screen and (max-width: 345px) {
+  .form-login {
+    transform: scale(0.8);
   }
 }
